@@ -1,0 +1,141 @@
+#aws {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 150px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.904);
+}
+
+#JRU {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10;
+  color: rgba(210, 255, 7, 0.925);
+}
+
+#join {
+  background-color: rgb(5, 47, 139, 0.432);
+  border: 2px solid;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 20px;
+  border-color: rgb(5, 47, 139, 0.432);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10;
+}
+
+#join:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#join:active {
+  background-color: white;
+  opacity: 0.8;
+}
+
+#Information {
+  background-color: rgba(5, 47, 139, 0.432);
+  color: white;
+  border: 2px solid;
+  border-color: rgba(5, 47, 139, 0.432);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10;
+}
+
+#Information:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#Information:active {
+  background-color: white;
+  opacity: 0.8;
+}
+
+body {
+  background-image: url("jru bg website.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
+#officers {
+  background-color: rgba(3, 34, 102, 0.548);
+  border: 2px solid;
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 20px;
+  border-color: rgba(5, 47, 139, 0.432);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10;
+}
+
+#officers:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#officers:active {
+  background-color: white;
+  opacity: 0.8;
+}
+
+#achievements {
+  background-color: rgba(3, 34, 102, 0.548);
+  border: 2px solid;
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  border-color: rgba(5, 47, 139, 0.432);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10;
+}
+
+#achievements:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#achievements:active{
+  background-color: white;
+  opacity: 0.8;
+}
+
+.buttons{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 100px;
+}
