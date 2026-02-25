@@ -4,9 +4,9 @@
   const achievementsButton = document.getElementById('achievements');
   
   joinButton.addEventListener('click', function() {
-    const name = prompt('Thank you for joining, What is your name? ') || ('USER');
+    /*const name = prompt('Thank you for joining, What is your name? ') || ('USER');
     const welcome = document.getElementById('aws');
-    welcome.innerText = `Welcome to AWS Club Learning JRU CH, ${name}!`;
+    welcome.innerText = `Welcome to AWS Club Learning JRU CH, ${name}!`;*/
     alert('Thank you for your interest in joining AWS Club! '+ name);
   });
 

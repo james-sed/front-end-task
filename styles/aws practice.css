@@ -1,21 +1,42 @@
 #aws {
-  font-family: arial;
+  font-family: "Roboto", Arial;
   font-weight: bold;
   font-size: 45px;
+  font-style: italic;
   text-align: center;
   margin-top: 150px;
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.904);
 }
 
-#JRU {
-  font-family: arial;
+#step {
+  font-family: "Roboto", Arial;
   font-weight: bold;
-  font-size: 45px;
+  font-style: italic;
+  font-size: 30px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 10;
   color: rgba(210, 255, 7, 0.925);
+}
+
+
+#joinResult{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium';
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 300px;
+  color: rgb(255, 255, 255);
+}
+
+.aboutUs{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium';
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 40px;
+  color: rgb(255, 255, 255);
 }
 
 #join {
@@ -71,12 +92,13 @@
 }
 
 body {
-  background-image: url("jru bg website.jpg");
+  background-image: url("yellow_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin: 0;
   min-height: 100vh;
+  animation: fadeIn 1.0s ease;
 }
 
 #officers {
@@ -137,5 +159,38 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
+
+.buttons a {
+  padding: 10px 20px;
+  background-color: rgba(3, 34, 102, 0.548);
+  color: white;
+  text-decoration: none;   
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.buttons a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.buttons a:active{
+  background-color: white;
+  opacity: 0.8;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  padding: 20px 40px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
