@@ -1,12 +1,142 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  min-height: 100vh;
+  animation: fadeIn 1.0s ease;
+}
+
+.header-container{
+  background-color: rgb(132, 151, 168);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+}
+
+.footer-container{
+  background-color: rgb(132, 151, 168);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  font-size: small;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-head-1{
+  color: white;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.infoCard-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 100px;
+  animation: slideInRight 0.8s ease forwards;
+}
+
+.infoCard-content{
+  padding: 16px;
+}
+
+.infoCard-content h3{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.infoCard-content p{
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.officer-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 32px;
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  animation: slideInUp 0.8s ease forwards;
+}
+
+.officerList-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 20px;
+  color: rgb(119, 109, 109);
+}
+
+
+.cards{
+  width: 350px;
+  background-color: rgb(87, 129, 165);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  margin: 20px;
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-style: italic;
+}
+
+.cards img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
 #aws {
   font-family: "Roboto", Arial;
   font-weight: bold;
   font-size: 45px;
   font-style: italic;
   text-align: center;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 0;
-  color: rgba(255, 255, 255, 0.904);
+  color: rgba(97, 92, 92, 0.904);
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+#club-Achieve{
+  font-family: "Roboto", Arial;
+  font-weight: bold;
+  font-size: 45px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 0;
+  color: rgba(97, 92, 92, 0.904);
+  animation: slideInLeft 1.8s ease forwards;
 }
 
 #step {
@@ -17,17 +147,24 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 10;
-  color: rgba(210, 255, 7, 0.925);
+  color: rgba(104, 114, 57, 0.925);
+  animation: slideInLeft 0.8s ease forwards;
 }
 
+.join-result-container{
+  background-color: rgb(132, 151, 168);
+  border-radius: 25px;
+  margin: 25px 25px 25px 25px;
+  padding: 25px 25px 25px 25px; 
+}
 
-#joinResult{
+.joinResult{
   text-align: center;
   font-family: 'Franklin Gothic Medium';
   font-style: italic;
   font-weight: bold;
-  margin-top: 300px;
   color: rgb(255, 255, 255);
+  animation: slideInDown 0.8s ease forwards;
 }
 
 .aboutUs{
@@ -36,7 +173,12 @@
   font-style: italic;
   font-weight: bold;
   margin-top: 40px;
-  color: rgb(255, 255, 255);
+  color: rgb(119, 109, 109);
+  animation: slideInDown 0.8s ease forwards;
+}
+
+.about-us-container{
+  animation: slideInDown 0.8s ease forwards;
 }
 
 #join {
@@ -91,16 +233,6 @@
   opacity: 0.8;
 }
 
-body {
-  background-image: url("yellow_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  min-height: 100vh;
-  animation: fadeIn 1.0s ease;
-}
-
 #officers {
   background-color: rgba(3, 34, 102, 0.548);
   border: 2px solid;
@@ -125,6 +257,10 @@ body {
 #officers:active {
   background-color: white;
   opacity: 0.8;
+}
+
+#club-Achieve{
+  animation: slideInDown 0.8s ease forwards;
 }
 
 #achievements {
@@ -153,21 +289,59 @@ body {
   opacity: 0.8;
 }
 
+.navBar {
+  display: flex;
+  flex-wrap: wrap;        
+  justify-content: center;
+  padding: 10px;
+}
+
+.Back-button a{
+  padding: 10px 20px;
+  background-color: rgba(14, 58, 153, 0.808);
+  color: white;
+  text-decoration: none;   
+  border-radius: 200px;
+  font-size: 1rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.Back-button{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-weight: bold;
+}
+
+.Back-button a:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.Back-button a:active{
+  background-color: white;
+  opacity: 0.8;
+}
+
 .buttons{
   justify-content: center;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
-  margin-top: 50px;
+  font-weight: bold;
 }
 
 .buttons a {
   padding: 10px 20px;
-  background-color: rgba(3, 34, 102, 0.548);
+  background-color: rgba(26, 76, 184, 0.808);
   color: white;
   text-decoration: none;   
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -189,8 +363,64 @@ body {
   padding: 20px 40px;
 }
 
+.aboutUs{
+  margin-top: 200px;
+}
+
+.about-us-container{
+  background-color: rgb(132, 151, 168);
+  margin: 30px 30px 30px 30px;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  padding: 10px 10px 10px 10px;
+  border-radius: 25px;
+}
+
+.about-us-container p{
+  color: white;
+  padding: 15px 15px 15px 15px;
+  margin: 30px 30px 30px 30px;
+  font-size: large;
+  font-family: 'Roboto', Arial;
+}
+
+.slide-left {
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.slide-right {
+  animation: slideInRight 0.8s ease forwards;
+}
+
+.slide-down {
+  animation: slideInDown 0.8s ease forwards;
+}
+
+.slide-down {
+  animation: slideInUp 0.8s ease forwards;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to   { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100px); opacity: 0; }
+  to   { transform: translateX(0);      opacity: 1; }
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+
+@keyframes slideInDown {
+  from { transform: translateY(-100px); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(100px); opacity: 0; }
+  to   { transform: translateY(0);     opacity: 1; }
 }
 
