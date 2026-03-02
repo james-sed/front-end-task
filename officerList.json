@@ -1,5 +1,6 @@
 [
   { "name": "Rizzelle Bautista",  "role": "President" },
   { "name": "Raven Jay",    "role": "Chief of Relations" },
-  { "name": "Christian Vergara",    "role": "Web Development Lead" }
+  { "name": "Christian Vergara",    "role": "Web Development Lead" },
+  { "name": "Miggy Rivera",    "role": "Backend Lead" }
 ]
