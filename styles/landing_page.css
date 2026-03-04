@@ -426,6 +426,9 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   animation: slideInUp 2s ease forwards;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 20px;
 }
 
 .club-departments-container h2{
@@ -455,40 +458,60 @@ body {
   margin-bottom: 10px;
 }
 
-#programs-head{
+#skills-head{
   text-align: center;
   color: #ffffff;
   margin-top: 40px;
   margin-bottom: 40px;
   font-size: 25px;
+  font-style: italic;
+  font-family: 'Arial Narrow Bold';
+  animation: slideInDown 1.8s ease forwards;
 }
 
-.programs-card {
-  margin-left: 50px;
-  margin-bottom: 50px;
+.skills-card {
   width: 190px;
   height: 254px;
-  background: rgb(103, 225, 255);
+  background: rgba(103, 225, 255, 0.705);
   transition: all 0.4s;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.596);
   font-size: 30px;
   font-weight: 900;
+  
 }
 
-.programs-card span{
+.skill-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: #204753a9;
+  box-shadow: 0px 0px 10px 5px  rgba(0, 183, 255, 0.596);
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: slideInUp 1.8s ease forwards;
+}
+
+.skills-card span{
   color: #ffffff;
 }
 
-.programs-card:hover {
+.skills-card:hover {
   border-radius: 15px;
   cursor: pointer;
   transform: scale(1.2);
-  box-shadow: 0px 0px 10px 5px  rgba(0, 0, 0, 0.705);
+  box-shadow: 0px 0px 10px 5px  rgba(255, 255, 255, 0.705);
   background: rgb(103, 151, 255);
 }
 
-.first-program {
+.skill-num {
   height: 100%;
   width: 100%;
   transition: all 0.4s;
@@ -499,12 +522,12 @@ body {
   border-radius: 15px;
 }
 
-.programs-card:hover .first-program {
+.skills-card:hover .skill-num {
   height: 0px;
   opacity: 0;
 }
 
-.second-program {
+.skill-name {
   height: 0%;
   width: 100%;
   opacity: 0;
@@ -517,7 +540,7 @@ body {
   transform: rotate(90deg) scale(-1);
 }
 
-.programs-card:hover .second-program {
+.skills-card:hover .skill-name {
   opacity: 1;
   height: 100%;
   font-size: 1.8rem;
